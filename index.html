@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>易小趣即将消失的域名</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #box{
+        width: 500px;
+        margin: 200px auto;
+    }
+</style>
+</head>
+<body>
+    <div id="box">
+        <p><span id="time"></span>s后，我就要离开啦</p>
+    </div>
+    
+    <script>
+        var date1 = new Date('2018-11-08 15:58:14');
+        var date2 = new Date();
+        var date = (date1.getTime() - date2.getTime()) / 1000;
+        var time = parseInt(date);
+        document.getElementById("time").innerText = time;
+        setInterval(function(){
+            time--;
+            document.getElementById("time").innerText = time;
+        },1000) 
+
+    </script>
+</body>
+</html>
