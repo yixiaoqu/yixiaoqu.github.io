@@ -12,17 +12,43 @@
         margin: 0;
         padding: 0;
     }
-    #box{
-        width: 500px;
-        margin: 200px auto;
+    #time{
+        color: red;
+        font-weight: bold;
     }
+    @media screen and (min-width:600px) {
+        #box{
+            width: 500px;
+            margin: 100px auto;
+        }
+        .pay img{
+            float: left;
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:600px) {
+        #box{
+            width: 80%;
+            margin: 50px auto;
+        }
+        .pay img{
+            float: left;
+            width: 50%;
+        }
+    }
+    
 </style>
 </head>
 <body>
     <div id="box">
-        <p><span id="time"></span>s后，我就要离开啦</p>
-        我就不信了1456
-        <p>123</p>
+        <p><span id="time"></span>s后，自毁装置开启！！</p>
+        <p>既然来了，不意思意思？</p>
+        <div class="pay">
+            <img src="images/wx.png" alt="">
+            <img src="images/zfb.jpg" alt="">
+            <p style="clear: both;"></p>
+        </div>
+        <p>有钱的捧个钱场，没钱的走个过场<img src="images/huaji.png" alt=""></p>
     </div>
     
     <script>
