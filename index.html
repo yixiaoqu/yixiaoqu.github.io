@@ -58,9 +58,14 @@
         var date = (date1.getTime() - date2.getTime()) / 1000;
         var time = parseInt(date);
         document.getElementById("time").innerText = time;
-        setInterval(function(){
-            time--;
-            document.getElementById("time").innerText = time;
+        var dingshi = setInterval(function(){
+           if(time>0){
+               time--;
+               document.getElementById("time").innerText = time;
+           }else{
+               clearInterval(dingshi)
+           }
+            
         },1000) 
 
     </script>
